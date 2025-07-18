@@ -161,6 +161,10 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+   background:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('./static/images/install_bg.png') no-repeat center center;
+    background-size: cover; color: #fff;
 }
 
 .install_guide .item{

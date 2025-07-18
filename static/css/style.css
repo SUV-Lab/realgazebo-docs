@@ -1,0 +1,36 @@
+a{text-decoration: none;}
+
+.install_guide{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../static/images/install_bg.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.install_guide video{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+ 
+.install_guide .con{
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 7rem !important;
+    padding-bottom: 8rem !important;
+    z-index: 2;
+}
+
+footer{
+    background: #000 !important;
+}
+
+.bibtex textarea{
+    width: 90%;
+    margin: 0 auto;
+    resize: none;
+}

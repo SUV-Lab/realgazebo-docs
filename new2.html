@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style2.css">
+    <style>
+        .videoWrapper {
+            width: 70%;
+            margin: 0 auto;
+            position: relative;
+            padding-bottom: 40%; /* 16:9 */
+            height: 0;
+        }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg{background: #f1f1f1;}
+
+        .card-img-top{width: 100%; height: 250px; background: #999;}
+
+        footer{background: #999; color: #fff; font-size: 0.75em; line-height: 1.5rem;}
+    </style>
+    <script src="https://kit.fontawesome.com/67d2a15843.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="top"> 
+        <video src="./static/images/install_bg.mp4" autoplay muted loop></video>
+        <div class="text-box">
+            <div class="container"> 
+                <div class="text-center mt-5 mb-5">
+                    <h1>AirGazebo : A Spatial Simulator for Heterogeneous <br>Unmanned Vehicle Swarm Simulation</h1>
+                    <div class="logo">
+                        <img src="./static/images/kari.png" alt="">
+                        <img src="./static/images/suv.png" alt="">
+                        <img src="./static/images/lig.png" alt="">
+                    </div>
+                    <div class="button mt-5">
+                        <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003193607" target="_blank">
+                            <button type="button" class="btn btn-outline-light rounded-5 px-4">
+                                <i class="fa-regular fa-file"></i>
+                                Paper
+                            </button>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1MQZxLzttUm6dWahRAvOcxzpNS3ECNbR2?usp=sharing" target="_blank">
+                            <button type="button" class="btn btn-outline-light rounded-5 px-4">
+                                <i class="fa-solid fa-download"></i>
+                                Download
+                            </button>
+                        </a>
+                        <a href="" target="_blank">
+                            <button type="button" class="btn btn-outline-light rounded-5 px-4">
+                                <i class="fa-brands fa-github"></i>
+                                Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="down fw-lighter">
+                Scroll Down<br>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <h2 class="text-center">Abstract</h2>
+            <div class="structure">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 mb-5 mt-1">
+                        <img src="./static/images/structure.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <p class="con fw-light px-2" style="text-align: justify;">
+                AirGazebo is a unified simulation platform that supports large-scale heterogeneous unmanned vehicle simulations by integrating Gazebo and AirSim. By combining Gazebo’s advanced physics simulation with AirSim’s high-fidelity photorealism, AirGazebo enables realistic and precise simulations of various unmanned vehicles, including UAVs, UGVs, and USVs. Performance is further optimized through GPU-based image compression using nvJPEG and simplification of DAE files. Built on the C-Track testbed environment, AirGazebo offers a virtual simulation space that closely mirrors real-world conditions, enabling reliable validation of unmanned system performance. The AirGazebo source code is open-source and freely available for use and extension.
+            </p>
+        </div>
+    </div>
+    <div class="pt-5 pb-5 bibtex bg">
+        <div class="container">
+            <h2 class="text-center">BibTeX</h2>
+            <textarea class="form-control pt-1 pb-1 mb-3 mt-3" rows="6" readonly>@article{ART003193607,
+    author={김민규 and 신요한 and 김도윤 and 문성태},
+    title={이기종 무인이동체 군집 운영을 위한 통합 시뮬레이터 개발},
+    journal={국방로봇학회},
+    issn={2800-0196},
+    year={2025},
+    volume={4},
+    number={2},
+    pages={8-13}
+}</textarea>
+        </div>
+    </div>
+    <div class="install_guide">
+        <video src="./static/images/install_bg.mp4" autoplay muted loop></video>
+        <div class="con">
+            <div class="container"> 
+                <h2 class="text-center mb-4 fs-1 fw-lighter">You can Install now</h2>
+                <div class="structure">
+                    <div class="row text-center">
+                        <div class="mt-3">
+                            <a href="https://drive.google.com/file/d/1aJSMflIIjbhCtPHxixCLQEUcpxMcJcuZ/view?usp=drive_link" target="_blank">
+                                <button class="btn btn-outline-light px-3">Install Guide</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-2">
+        <div class="container text-end" >
+            2025 SUV Lab in CBNU
+        </div>
+    </footer>
+  </body>
+</html>
