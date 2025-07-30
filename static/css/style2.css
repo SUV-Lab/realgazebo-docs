@@ -8,13 +8,18 @@ a{text-decoration: none;}
     display: flex;
 }
 
+
+.top h1{
+    font-size: 3.5rem;
+}
+
 .top video{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     z-index: 0;
 }
 
@@ -117,4 +122,28 @@ footer{
 
 .top{
     background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../static/images/main_thumb.png') no-repeat center center;
+    background-size: cover;
+}
+
+.bibtex .text{width: 90%; margin: 0 auto;}
+
+@media(max-width:780px){
+    .top h1{font-size: 1.5rem;}
+    .lgo{grid-area: 10px;}
+    .logo img{width: 25%; height: auto;}
+    .top h1 b{font-size: 4rem; margin-bottom: 1.5rem; display: block;}
+    .br{display: block;}
+    .hide{display: none;}
+}
+
+@media(max-width:480px){
+    .logo{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 3%;
+    }
+    .logo img{width: 40%; height: 40px; object-fit: contain;}
+    .logo img:nth-child(2){width: 52%;}
+    .logo img:nth-child(3){margin-top: 1.5rem;}
 }
